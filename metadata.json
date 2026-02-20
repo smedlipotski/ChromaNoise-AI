@@ -1,0 +1,5 @@
+{
+  "name": "ChromaNoise AI",
+  "description": "A fluid, tactile noise visualizer powered by Gemini. Explore generative soundscapes and visuals controlled by your touch and AI-generated color palettes.",
+  "requestFramePermissions": []
+}

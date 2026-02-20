@@ -1,0 +1,33 @@
+
+<main class="relative w-full h-full bg-black overflow-hidden">
+  
+  <!-- Visualizer Background -->
+  <app-visualizer 
+    [colors]="currentColors()" 
+    [speed]="speed()" 
+    [scale]="scale()"
+    [particleCount]="particleCount()"
+    [mode]="mode()"
+    [noiseType]="noiseType()"
+    class="block w-full h-full z-0"
+  ></app-visualizer>
+
+  <!-- Floating Controls -->
+  <app-controls 
+    [colors]="currentColors()"
+    [paletteName]="paletteName()"
+    [paletteDesc]="paletteDesc()"
+    [speed]="speed()" 
+    [scale]="scale()" 
+    [particleCount]="particleCount()"
+    [mode]="mode()"
+    [noiseType]="noiseType()"
+    (speedChange)="speed.set($event)"
+    (scaleChange)="scale.set($event)"
+    (particleCountChange)="particleCount.set($event)"
+    (modeChange)="mode.set($event)"
+    (noiseTypeChange)="noiseType.set($event)"
+    (newPalette)="updatePalette($event)"
+  ></app-controls>
+
+</main>
